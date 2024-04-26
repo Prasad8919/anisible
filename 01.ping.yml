@@ -6,5 +6,6 @@
 
 - hosts: web
   tasks:
-    - name: Installing git
-      yum: name=nignix state=present
+    - name: Installing httpd
+      yum: name=httpd state=present
+      

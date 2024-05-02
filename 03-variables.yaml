@@ -1,6 +1,6 @@
-- name: veriables
+- name: variables
   hosts: localhost
-  vers:
+  vars:
     course: "ansible"
     trainer: "prasad"
     duration: "120 hrs"
@@ -8,6 +8,5 @@
   - name: printing the information
     ansible.builtin.debug:
      msg: "Hi , we are learning {{ course }}, from {{ trainer }}, duraion is {{ duration }}." 
-
 
 

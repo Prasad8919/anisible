@@ -2,13 +2,13 @@
   hosts: localhost
   become: yes
   vars:
-  - name: username
+  - name: USERNAME
     prompt: Please enter username
-  - name: password
+  - name: PASSWORD
     prompt: please enter password
     private: yes  
 
   tasks:
   - name: print the information
     ansible.builtin.debug:
-     msg: "hi, please enter username: {{username}}, enter password: {{password}}."
+     msg: "hi, please enter username: {{USERNAME}}, enter password: {{PASSWORD}}."

@@ -1,7 +1,0 @@
-vars_prompt:
-  - name: USERNAME
-    prompt: Please enter username
-    private: false
-  - name: PASSWORD
-    prompt: please enter password
-    private: true 
